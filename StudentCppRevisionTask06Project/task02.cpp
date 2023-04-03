@@ -25,9 +25,11 @@
 */
 
 bool task02(int x1, int y1, int x2, int y2) {
-	if (x1 < 1 || y1 < 1 || x1 > 8 || y1 > 8 || y1 != y2) {
+	if (x1 < 1 || y1 < 1 || x1 > 8 || y1 > 8 || x2 != x1) {
 		return false;
 	}
-
+	if (y2 - 1 == y1) {
+		return true;
+	}
 	return false;
 }
